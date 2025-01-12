@@ -1,6 +1,6 @@
-// 
+//
 // Sections
-// 
+//
 
 section.resume-section {
     display: flex;
@@ -13,6 +13,20 @@ section.resume-section {
 
     .resume-section-content {
         width: 100%;
+    }
+    .img-profile{
+        display: none;
+        width: 7rem;
+        height: 8.5rem;
+        position: absolute;
+        right: 8rem;
+        top: 5rem;
+    }
+    .time-span-print {
+        display: none;
+    }
+    .address {
+        display: flex;
     }
 }
 

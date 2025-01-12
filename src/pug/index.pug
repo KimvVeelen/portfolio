@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Resume - Start Bootstrap Theme
+        title Resume - Katja Bregenzer
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -27,9 +27,9 @@ html(lang='en')
         // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
             a.navbar-brand.js-scroll-trigger(href='#page-top')
-                span.d-block.d-lg-none Clarence Taylor
+                span.d-block.d-lg-none Katja Bregenzer
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='Profile picture')
             button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarResponsive.collapse.navbar-collapse
@@ -43,9 +43,7 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#awards') Awards
+                        a.nav-link.js-scroll-trigger(href='#languages') Languages
 
         // Page Content
         .container-fluid.p-0
@@ -54,24 +52,32 @@ html(lang='en')
             section#about.resume-section
                 .resume-section-content
                     h1.mb-0
-                        | Clarence 
-                        span.text-primary Taylor
-                    .subheading.mb-5
-                        | 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · 
-                        a(href='mailto:name@email.com') name@email.com
-                    p.lead.mb-5
-                        | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
-                    .social-icons
-                        a.social-icon(href='#!')
-                            i.fab.fa-linkedin-in
-                        a.social-icon(href='#!')
-                            i.fab.fa-github
-                        a.social-icon(href='#!')
-                            i.fab.fa-twitter
-                        a.social-icon(href='#!')
-                            i.fab.fa-facebook-f
+                        | Katja
+                        span.text-primary Bregenzer
+                    .subheading.address.mt-2
+                        div.col-4
+                            i.fa.fa-map-marker
+                            | Garagegatan 16f · 21251 Malmö
+                        div.col-4
+                            i.fa.fa-phone
+                            | (046) 760852696
+                    .subheading.address.mb-5.mt-2
+                        div.col-4
+                            i.fa.fa-envelope
+                            a(href='mailto:katja.bregenzer@gmail.com') katja.bregenzer@gmail.com
+                        div.col-4
+                            i.fa.fa-calendar
+                            | 18.12.1989
 
-            hr.m-0
+                    img.img-fluid.img-profile(src='assets/img/profile.jpg', alt='Profile picture')
+                    p.lead.mb-5
+                        | As an engineering manager I want to support my reports in their growth and enable the team to accomplish their goals.
+                        | I want to be part of a team and contribute with own backend and frontend skills as well as observe my team mates in their element to give constructive feedback.
+                    .social-icons
+                        a.social-icon(href='https://www.linkedin.com/in/katja-bregenzer-438232a6/')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/BregenzerK')
+                            i.fab.fa-github
 
             // Experience
             section#experience.resume-section
@@ -80,41 +86,95 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Senior Web Developer
-                            .subheading.mb-3 Intelitec Solutions
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                            h3.mb-0 Engineering Manager/ Software Engineer
+                            .subheading.mb-3 Lime Technologies AB
+                            p.text-primary.time-span-print March 2021 - present
+                            .subheading.mb-3 Responsibilities:
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Managing a team with up to 7 members: regular 1:1, reviews, personal development, building team spirit
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Scoping and preparing projects in collaboration with a product manager
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Project management within the Shape Up framework
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Contributing to projects as a software engineer
+
+                            .subheading.mb-3.mt-3 Projects (excerpts):
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Email Integration: Automated system to import new messages from monitored accounts and reply from Lime CRM
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Electronic Signatures: Send documents for signing, track signers' status and send reminders
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Configure Price Quote (CPQ): Compose offers and generate quotes based on templates
+
                         .flex-shrink-0
-                            span.text-primary March 2013 - Present
+                            span.text-primary.time-span March 2021 - present
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Web Developer
-                            .subheading.mb-3 Intelitec Solutions
-                            p
-                                | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+                            h3.mb-0 Senior Software Engineer
+                            .subheading.mb-3 Lime Technologies AB
+                            p.text-primary.time-span-print August 2018 - May 2021
+                            .subheading.mb-3 Projects (excerpts):
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Web Client: Features and bug fixes for an Angular application with StencilJS components, e.g. add dialog, relationship picker, forgot password routine
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Task Handler: Asynchronous service for long running processes with custom task registration implemented with Celery (Python)
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Business Intelligence Integration: Seamless connection between a whitelabeled BI tool and Lime CRM
                         .flex-shrink-0
-                            span.text-primary December 2011 - March 2013
+                            span.text-primary.time-span August 2018 - March 2021
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Junior Web Designer
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                            h3.mb-0 Consultant / Software developer
+                            .subheading.mb-3 BridgingIT GmbH
+                            p.text-primary.time-span-print April 2015 - May 2018
+                            .subheading.mb-3 Projects (excerpts):
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    |
+                                    a(href='https://www.bosch-smarthome.com/') Webshop Bosch SmartHome:
+                                    | Worked on topics like checkout, account management, internationalisation, subscription in a Spring/ Liferay environment as part of an international SRUM team
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Digital table soccer: Spring boot and Angular web application to manage games and show the latest scores
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Test automation with SOAP, REST and Selenium
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | FirstSpirit (CMS) migration and layout improvements
                         .flex-shrink-0
-                            span.text-primary July 2010 - December 2011
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 Web Design Intern
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-                        .flex-shrink-0
-                            span.text-primary September 2008 - June 2010
-
-            hr.m-0
+                            span.text-primary.time-span April 2015 - May 2018
 
             // Education
             section#education.resume-section
@@ -123,128 +183,131 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 University of Colorado Boulder
-                            .subheading.mb-3 Bachelor of Science
-                            div Computer Science - Web Development Track
-                            p GPA: 3.23
+                            h3.mb-0 Hochschule der Medien
+                            .subheading.mb-3 Master of Science
+                            p Computer Science and Media
+                            p.text-primary.time-span-print March 2013 - March 2015
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Software architecture and technology (personal focus: web applications)
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Technical aspects of multimedia
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | IT / software project management
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Working student/ tester at Diconium GmbH
                         .flex-shrink-0
-                            span.text-primary August 2006 - May 2010
+                            span.text-primary.time-span March 2013 - March 2015
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
-                            h3.mb-0 James Buchanan High School
-                            .subheading.mb-3 Technology Magnet Program
-                            p GPA: 3.56
+                            h3.mb-0 Reutlingen University
+                            .subheading.mb-3 Bachelor of Science
+                            p Media and Communication Informatics
+                            p.text-primary.time-span-print October 2009 - February 2013
+                            ul.fa-ul.mb-0
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Software development techniques in several programming languages and introduction to pattern
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Basics in databases, operating systems, network communication and project management
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Overview of media topic
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Semester abroad in Port Elizabeth, South Africa (Nelson Mandela University)
                         .flex-shrink-0
-                            span.text-primary August 2002 - May 2006
-
-            hr.m-0
+                            span.text-primary.time-span October 2009 - February 2013
 
             // Skills
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
+                    .subheading.mb-3 Management
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Team Management
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Agile project management
+
+                    .subheading.mb-3.mt-3 Programming Languages & Tools
                     ul.list-inline.dev-icons
+                        li.list-inline-item
+                            i.fab.fa-python
                         li.list-inline-item
                             i.fab.fa-html5
                         li.list-inline-item
                             i.fab.fa-css3-alt
                         li.list-inline-item
-                            i.fab.fa-js-square
+                            i.fab.fa-java
                         li.list-inline-item
                             i.fab.fa-angular
                         li.list-inline-item
-                            i.fab.fa-react
+                            i.fab.fa-git
                         li.list-inline-item
-                            i.fab.fa-node-js
+                            i.fab.fa-github
                         li.list-inline-item
-                            i.fab.fa-sass
+                            i.fab.fa-jenkins
                         li.list-inline-item
-                            i.fab.fa-less
+                            i.fab.fa-jira
                         li.list-inline-item
-                            i.fab.fa-wordpress
-                        li.list-inline-item
-                            i.fab.fa-gulp
-                        li.list-inline-item
-                            i.fab.fa-grunt
-                        li.list-inline-item
-                            i.fab.fa-npm
-                    .subheading.mb-3 Workflow
+                            i.fab.fa-confluence
+
+                    .subheading.mb-3.mt-3 Frameworks
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Mobile-First, Responsive Design
+                            | Flask, Celery
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Cross Browser Testing & Debugging
+                            | StencilJs
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Cross Functional Teams
+                            | Spring/ Spring Boot
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Agile Development & Scrum
+                            | Test automation with Selenium, REST, SOAP
 
-            hr.m-0
-
-            // Interests
-            section#interests.resume-section
+            // Languages
+            section#languages.resume-section
                 .resume-section-content
-                    h2.mb-5 Interests
-                    p
-                        | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    p.mb-0
-                        | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
-
-            hr.m-0
-
-            // Awards
-            section#awards.resume-section
-                .resume-section-content
-                    h2.mb-5 Awards & Certifications
+                    h2.mb-5 Languages
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Google Analytics Certified Developer
+                                i.fas.fa-check
+                            | German: Native speaker
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Mobile Web Specialist - Google Certification
+                                i.fas.fa-check
+                            | English: Fluent
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 2
-                            sup nd 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - James Buchanan High School - Hackathon 2006
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 3
-                            sup rd 
-                            | Place - James Buchanan High School - Hackathon 2005
+                                i.fas.fa-check
+                            | Swedish: Beginner
+
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
