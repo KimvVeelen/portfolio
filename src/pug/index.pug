@@ -49,7 +49,8 @@ html(lang='en')
         .container-fluid.p-0
 
             // About
-            section#about.resume-section
+            section#about.resume-section.cover
+                .side-bar
                 .resume-section-content
                     h1.mb-0
                         | Katja
@@ -69,10 +70,10 @@ html(lang='en')
                             i.fa.fa-calendar
                             | 18.12.1989
 
-                    img.img-fluid.img-profile(src='assets/img/profile.jpg', alt='Profile picture')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='Profile picture')
                     p.lead.mb-5
-                        | As an engineering manager I want to support my reports in their growth and enable the team to accomplish their goals.
-                        | I want to be part of a team and contribute with own backend and frontend skills as well as observe my team mates in their element to give constructive feedback.
+                        | As an engineering manager I want to support my directs in their growth and enable the team to accomplish their goals.
+                        | I want to be part of a team and contribute with own backend and frontend skills as well as observe my teammates in their element to give constructive feedback.
                     .social-icons
                         a.social-icon(href='https://www.linkedin.com/in/katja-bregenzer-438232a6/')
                             i.fab.fa-linkedin-in
@@ -160,11 +161,7 @@ html(lang='en')
                                         i.fas.fa-check
                                     |
                                     a(href='https://www.bosch-smarthome.com/') Webshop Bosch SmartHome:
-                                    | Worked on topics like checkout, account management, internationalisation, subscription in a Spring/ Liferay environment as part of an international SRUM team
-                                li
-                                    span.fa-li
-                                        i.fas.fa-check
-                                    | Digital table soccer: Spring boot and Angular web application to manage games and show the latest scores
+                                    | Checkout, account management, internationalisation and subscriptions in a Spring/ Liferay environment as part of an international SRUM team
                                 li
                                     span.fa-li
                                         i.fas.fa-check
@@ -173,6 +170,11 @@ html(lang='en')
                                     span.fa-li
                                         i.fas.fa-check
                                     | FirstSpirit (CMS) migration and layout improvements
+                                li
+                                    span.fa-li
+                                        i.fas.fa-check
+                                    | Digital table soccer: Spring boot and Angular web application to manage games and show the latest scores
+
                         .flex-shrink-0
                             span.text-primary.time-span April 2015 - May 2018
 
@@ -217,7 +219,7 @@ html(lang='en')
                                 li
                                     span.fa-li
                                         i.fas.fa-check
-                                    | Software development techniques in several programming languages and introduction to pattern
+                                    | Software development techniques in several programming languages and introduction to patterns
                                 li
                                     span.fa-li
                                         i.fas.fa-check
@@ -251,25 +253,25 @@ html(lang='en')
                     .subheading.mb-3.mt-3 Programming Languages & Tools
                     ul.list-inline.dev-icons
                         li.list-inline-item
-                            i.fab.fa-python
+                            i(class="fab fa-python", title="Python")
                         li.list-inline-item
-                            i.fab.fa-html5
+                            i(class="fab fa-html5" title="HTML5")
                         li.list-inline-item
-                            i.fab.fa-css3-alt
+                            i(class="fab fa-css3-alt" title="CSS3")
                         li.list-inline-item
-                            i.fab.fa-java
+                            i(class="fab fa-java" title="Java")
                         li.list-inline-item
-                            i.fab.fa-angular
+                            i(class="fab fa-angular", title="Angular")
                         li.list-inline-item
-                            i.fab.fa-git
+                            i(class="fab fa-git" title="Git")
                         li.list-inline-item
-                            i.fab.fa-github
+                            i(class="fab fa-github", title="Github")
                         li.list-inline-item
-                            i.fab.fa-jenkins
+                            i(class="fab fa-jenkins" title="Jenkins")
                         li.list-inline-item
-                            i.fab.fa-jira
+                            i(class="fab fa-jira", title="Jira")
                         li.list-inline-item
-                            i.fab.fa-confluence
+                            i(class="fab fa-confluence" title="Confluence")
 
                     .subheading.mb-3.mt-3 Frameworks
                     ul.fa-ul.mb-0

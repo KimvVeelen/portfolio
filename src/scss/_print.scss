@@ -1,16 +1,48 @@
 @page{
     size: A4 portrait;
-    margin: 1rem 1rem;
+    //margin: 1rem 1rem;
 }
 
 @media print{
     body{
         font-size: 0.75rem;
     }
+    #about {
+        .side-bar {
+            padding-left: 0;
+            padding-right: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 17rem;
+            height: 62rem;
+            --bs-bg-opacity: 1;
+            background-color: #bd5d38 !important;
+            print-color-adjust: exact;
+            z-index: -1;
+        }
+    }
+    .cover {
+        .resume-section-content {
+            padding: 20rem 0;
+        }
+    }
     .lead {
         font-size: inherit!important;
         margin-top: 2.5rem!important;
         margin-right: 5rem!important;
+        width: 47%!important;
+    }
+    .social-icons{
+        print-color-adjust: exact;
+        position: absolute;
+        top: 35rem;
+        right: 4.3rem;
+        .social-icon .fab {
+            position: relative;
+            display: inline-block;
+        }
+        //width: 7rem;
     }
     h1{
         font-size: 3rem;
