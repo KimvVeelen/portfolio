@@ -199,52 +199,13 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Koppeling van factuur aan betaling - Python</h3>
                             <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                            <p>Python project waar facturen aan betalingen worden gekoppeld. Opgezet in python 
-                                laad de code twee excel bestanden met de module Pandas (Declaratieoverzicht_dummy.xlsx 
-                                en Bankbijschriften_dummy.xlsx). Dexlaratieoverzicht_dummy.xlsx bevat een overzicht van 
-                                de verzonden facturen. Bankbijschriften_dummy.xlsx is een uitdraai van de bankrekening 
-                                en laat alle betalingen zien.</p>
-                            <br>
-                            <br>
-                            <p>Facturatie bestand:</p>
-                            <br>
-                            <img src="img/Schermafbeelding 2025-03-02 172048.png">
-                            <br>
-                            <br>
-                            <p>Betalingen:</p>
-                            <br>
-                            <img src="img/Schermafbeelding 2025-03-02 172117.png">
-                            <br>
-                            <br>
-                            <p>De twee documenten worden met elkaar vergeleken. Pandas maakt vervolgens een nieuw excel document 
-                                waar de resultaten van de vergelijking zichtbaar in zijn (definitief_Overzicht[dag]-[maand]-[jaar]_[uur]_[minuut].xlsx).
-                                Er wordt aangegeven of de betalingen zijn betaalt, van elkaar verschillen (indien dit zo is, wordt er 
-                                aangegeven hoe groot dit verschil is).</p>
-                            <br>
-                            <br>
-                            <p>Resultaat:</p>
-                            <br>
-                            <img src="img/Schermafbeelding 2025-03-02 172427.png">
-                            <br>
-                            <br>
-                            <p>Gemiddelde duur betaling per klant:</p>
-                            <br>
-                            <p>Duur_betaling_perklant.ipynb haalt uit het nieuw gegenereerde overzicht een diagram waarin zichtbaar wordt
-                                hoe lang elke klant gemiddeld doet over een betaling. Daaronder is een diagram welke de P waarde laat zien 
-                                (Hoe waarschijnlijk is het dat we het eerste diagram voor waarheid kunnen aanzien). Gezien de dummy bestanden 
-                                weinig data bezitten, is de P waarde vanzelfsprekend 1. Naarmate de bestanden meer data bevatten, zal deze waarde dalen.
-                                Als vervolg heb ik een vergelijkbaare notebook gemaakt om inzicht te krijgen in de toekomstige omzet per maand, met succes.</p>
-                            <br>
-                            <br>
-                            <p>Gemiddelde duur betaling per klant in dagen:</p>
-                            <br>
-                            <img src="img/Schermafbeelding 2025-03-02 1722422.png">
-                            <br>
-                            <br>
-                            <p>P waarde per klant:</p>
-                            <br>
-                            <img src="img/Schermafbeelding 2025-03-02 172318.png">
-                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/KimvVeelen/Factuur_betaling">factuur-betaling</a></span></div>
+                            <p>Een Python-project waarin facturen aan betalingen worden gekoppeld. Met Pandas worden twee Excel-bestanden ingeladen:
+                                Declaratieoverzicht_dummy.xlsx (overzicht verzonden facturen), Bankbijschriften_dummy.xlsx (uitdraai bankbetalingen).
+                                Deze worden vergeleken en het resultaat wordt opgeslagen in een nieuw Excel-bestand: definitief_Overzicht[dag]-[maand]-[jaar][uur][minuut].xlsx. 
+                                Hierin staat of betalingen voldaan zijn, en eventuele verschillen worden berekend. Daarnaast genereert Duur_betaling_per_klant.ipynb een diagram 
+                                met de gemiddelde betalingstijd per klant en een P-waarde om de betrouwbaarheid van deze data te toetsen. Door beperkte dummy-data is de P-waarde initieel 1, 
+                                maar neemt af naarmate meer data wordt toegevoegd. Als vervolg hierop heb ik een vergelijkbare notebook gemaakt om toekomstige omzet per maand te voorspellen, met succes.</p>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/KimvVeelen/Factuur_betaling">Github: factuur-betaling</a></span></div>
                         </div>
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
